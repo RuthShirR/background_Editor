@@ -1,0 +1,35 @@
+.DisplayImg {
+}
+.img_bg {
+  width: 100%;
+  margin-top: 18px;
+  height: 347px;
+}
+.download_warning {
+  color: #03a9f4;
+  text-align: right;
+ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFjSURBVHgBnVGxTsMwEPXZriFVBcmGBEOYWIvEglhALLAhsTHQsjAhmn4BP4Cg/QLKWDEUsbIUCQRbYYKNdGNBSWlQgxP7SCqldEKCG/z07Hv3zneE/DEgPbZOPfOyavkbZ54dU1EKJ8CXOWWlGBms9bxudGfuPftt2XKHgp2Tfu1rkneinLY/eL7e3gM/q7hwHTgDwbxBQa9GVFZh9zgooWCupLjYPMjX0qSVi8BRlPgP24VGyufuPo9CoW+kYEXOFc4PlLKah4XaqE+NZgJmxrmUdcqFExMklBCKQGH6t4+6a5aPDDzNEzHRGiD+6TkNJPwVQPfG7xQOXQnViYeiaKaTGgkgfMJIPo4LqMIe1QkSCj6PSVsIUckeGQobcqKY8dnbwCGCdViMLpSTykrTcmAwT3FqXu3n61mi3fJMMSUqMofdfp7h+5JxDuO2w8XxZHGCkJBjTwowJaeNl03DJf+Nb5VmkxfaafhkAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-position: 593px 15px;
+  padding-top: 12px;
+  padding-right: 25px;
+  font-size: 13px;
+  position: relative;
+  
+}
+.color_btn {
+  border: 1px solid #ffffff8a;
+  background-color: transparent;
+  color: #ffffff8a;
+  border-radius: 20px;
+  padding: 6px;
+  width: 90px;
+  position: absolute;
+  margin: -21px 0 0 -290px;
+   cursor: pointer;
+}
+.color_input {
+  position: absolute;
+ margin: -16px 0 0 -286px;
+  opacity: 0;
+}
