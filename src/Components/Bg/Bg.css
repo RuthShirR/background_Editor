@@ -10,25 +10,24 @@
   border-radius: 20px;
   background-color: #222a34;
   position: relative;
-  
 }
-.header{
+.header {
   display: flex;
   flex-direction: row-reverse;
 }
 .header_title {
   color: white;
-    font-size: 39px;
+  font-size: 39px;
   text-align: right;
   padding-top: 20px;
   padding-right: 22px;
   font-family: "Aduma";
 }
-.header_small_text{
-     color: #ffffff99;
+.header_small_text {
+ color: #ffffff99;
     margin-top: 59px;
-    margin-right: 114px;
-    font-size: 13px;
+    margin-right: 140px;
+    font-size: 11px;
     direction: rtl;
 }
 .close_top {
@@ -44,8 +43,8 @@
   padding: 7px;
   text-align: right;
   position: absolute;
-      top: 49px;
-    left: 20px;
+  top: 49px;
+  left: 20px;
   background-image: url(../../Assets/Images/Upload.png);
   background-repeat: no-repeat;
   background-position: 13px 10px;
@@ -146,42 +145,42 @@
   padding: 40px;
   overflow: scroll;
   direction: rtl;
-  cursor: pointer;
 }
 .close_popup {
   position: relative;
   margin-left: 824px;
   margin-bottom: -33px;
   height: 18px;
+  cursor: pointer;
 }
 .footer {
   display: flex;
   display: flex;
   flex-direction: row-reverse;
-    margin-top: 17px;
+  margin-top: 17px;
   width: 100%;
   height: 52px;
   position: relative;
 }
 .footer_logo {
-     height: 28px;
-    margin-right: 26px;
-    margin-top: 12px;
+  height: 28px;
+  margin-right: 26px;
+  margin-top: 12px;
 }
 .banner_footer {
-height: 53px;
-    margin-left: -3px;
-    margin-right: 5px;
+  height: 53px;
+  margin-left: -3px;
+  margin-right: 5px;
 }
 .banner_footer_btn {
-    background-color: #475366;
-    color: #ffffff99;
-    width: 116px;
-    border-radius: 28px;
-    padding: 7px;
-    text-align: center;
-    position: absolute;
-    top: 11px;
-    right: 16px;
-    cursor: pointer;
+  background-color: #475366;
+  color: #ffffff99;
+  width: 116px;
+  border-radius: 28px;
+  padding: 7px;
+  text-align: center;
+  position: absolute;
+  top: 11px;
+  right: 16px;
+  cursor: pointer;
 }

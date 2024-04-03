@@ -8,10 +8,13 @@ import DisplayImg from "../DisplayImg/DisplayImg";
 import close_btn from "../../Assets/Images/close1.png";
 import banner from "../../Assets/Images/banner.png";
 import logo from "../../Assets/Images/logo.png";
+import DownloadPopup from "../Download_popup/DownloadPopup";
 
 function Bg(): JSX.Element {
   const [selectedTab, setSelectedTab] = useState<string>("removeBackground");
   const [show_terms, setShow_terms] = useState<boolean>(false);
+  const [show_download_popup, setShow_download_popup] =
+    useState<boolean>(false);
 
   const handleTabClick = (tabName: string) => {
     if (selectedTab !== tabName) {
@@ -20,6 +23,9 @@ function Bg(): JSX.Element {
   };
   const showTerms = () => {
     setShow_terms(!show_terms);
+  };
+  const showDownloadPopup = () => {
+    setShow_download_popup(!show_download_popup);
   };
   return (
     <div className="Bg">
@@ -74,6 +80,7 @@ function Bg(): JSX.Element {
           <div className="side_content">
             <div className="side_in_content">
               <Download
+                showDownloadPopup={showDownloadPopup}
                 title="תמונה חינם"
                 description="612x408 תצוגה מקדימה של תמונה "
                 button="הורד"
@@ -81,6 +88,7 @@ function Bg(): JSX.Element {
                 position="top"
               ></Download>
               <Download
+                showDownloadPopup={showDownloadPopup}
                 title="Pro"
                 description="1280x1920 תצוגה מלאה "
                 button="HD הורד"
@@ -135,7 +143,7 @@ function Bg(): JSX.Element {
                 בלתי ניתן להעברה ולא בלעדי לגשת לאתר ולהשתמש בו על ידי הצגתו
                 בדפדפן האינטרנט שלך רק למטרת קניות ולא לכל שימוש מסחרי או שימוש
                 מטעם צד שלישי כלשהו, ​​למעט כפי שהותר במפורש על ידי
-                www.totash.co.il מראש. כל הפרה של הסכם זה תביא לביטול מיידי של
+                www.test.co.il מראש. כל הפרה של הסכם זה תביא לביטול מיידי של
                 הרישיון שניתן בפסקה זו ללא הודעה אליך. אלא אם כן הותר במפורש על
                 ידי החברה שלנו מראש, כל החומרים, לרבות תמונות, טקסט, איורים,
                 עיצובים, אייקונים, תמונות, תוכניות, קטעי מוזיקה או הורדות, קטעי
@@ -164,6 +172,11 @@ function Bg(): JSX.Element {
         </>
       ) : (
         <> </>
+      )}
+      {show_download_popup ? (
+        <DownloadPopup showDownloadPopup={showDownloadPopup}></DownloadPopup>
+      ) : (
+        <></>
       )}
     </div>
   );

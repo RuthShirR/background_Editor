@@ -3,6 +3,7 @@ import new_icon from "../../Assets/Images/new.png";
 import check from "../../Assets/Images/check.png"
 
 interface DownloadProps {
+  showDownloadPopup: Function;
   title: string;
   description: string;
   button: string;
@@ -10,6 +11,10 @@ interface DownloadProps {
   position: string;
 }
 function Download(props: DownloadProps): JSX.Element {
+  const show_popup =()=>{
+ props.showDownloadPopup();
+  }
+ 
   return (
     <div
       className={
@@ -25,11 +30,13 @@ function Download(props: DownloadProps): JSX.Element {
         )}
       </div>
       <div className="download_description">{props.description}</div>
-      <button className="download_btn">{props.button}</button>
-      <div className="small_txt">{props.small_txt}
-      <img src={check} alt="check" className="check_icon" />
+      <button className="download_btn" onClick={show_popup}>
+        {props.button}
+      </button>
+      <div className="small_txt">
+        {props.small_txt}
+        <img src={check} alt="check" className="check_icon" />
       </div>
-
     </div>
   );
 }
